@@ -5,7 +5,7 @@
 - Connor Coles
 
 ### Project Summary
-We are conducting a data mining project focused on analyzing driver performance in Formula One racing. Our goal is to correlate driver performance with track and weather conditions, and to predict future race results using these correlations. We will apply various data mining techniques to extract meaningful insights from the dataset.
+We are conducting a data mining project focused on analyzing driver performance in Formula One racing, with the goal to correlate driver performance with track and weather conditions, and to predict future race results using these correlations. We will apply various data mining techniques learned throughout the course to extract meaningful insights from the dataset.
 
 ### Important Dates
 - **Data Selection Due:** November 13, 2024
@@ -23,6 +23,8 @@ Directories:
 - pandas
 - numpy
 - matplotlib
+- rapidfuzz
+- fastf1
 
 ### Video Presentation
 <!-- Our video presentation can be found [here](insert_video_link). -->
@@ -35,5 +37,6 @@ Our video presentation will be linked here.
 - **Video Presentation** - A recorded video summarizing our project, linked above.
 
 ### Important Links
-- [Dataset Source](https://openf1.org)
+- [Dataset Source](https://github.com/theOehrly/Fast-F1)
+- [Dataset Documentation](https://docs.fastf1.dev/index.html)
 - [GitLab Repository](https://gitlab.bucknell.edu/sso005/csci349_final_project)
