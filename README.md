@@ -7,6 +7,19 @@
 ### Project Summary
 We are conducting a data mining project focused on analyzing driver performance in Formula One racing, with the goal to correlate driver performance with track and weather conditions, and to predict future race results using these correlations. We will apply various data mining techniques learned throughout the course to extract meaningful insights from the dataset.
 
+## Getting Started
+To run the project, you will need to set up a conda environment using the `conda_env.yml` file. To do this, run the following command in the terminal:
+```
+conda env create -f conda_env.yml
+```
+
+Then, activate the environment with:
+```
+conda activate csci349
+```
+
+Finally, open the Jupyter notebook of your choice and run the cells.
+
 ### Important Dates
 - **Data Selection Due:** November 13, 2024
 - **DataPrep_EDA.ipynb Due:** November 22, 2024
