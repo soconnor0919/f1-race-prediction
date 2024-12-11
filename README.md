@@ -1,55 +1,93 @@
-# CSCI 349 Final Project: Formula One Driver Performance Analysis
+# Formula One Lap Time Prediction
 
-### Team Members:
+## Project Overview
+This project analyzes Formula One race data to predict lap times based on weather conditions, track characteristics, and other race-specific variables. Using machine learning models, we achieved significant success in predicting lap times across different tracks and conditions.
+
+## Video Presentation
+
+Our video presentation is not available yet. When it is, it will be linked here.
+
+## Key Findings
+- LightGBM model achieved the best overall performance (R² = 0.806, RMSE = 3.663)
+- Weather conditions explain up to 80% of lap time variation
+- Track-specific characteristics significantly impact model performance
+- Best performance on Mexico City GP (R² = 0.899) and Belgian GP (R² = 0.845)
+
+## Data Source
+Data was obtained from the FastF1 API, which provides:
+- Detailed lap timing data
+- Weather conditions
+- Track information
+- Tire compound data
+Link: [FastF1 Documentation](https://docs.fastf1.dev/)
+
+## Required Packages
+```yaml
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - fastf1
+  - jupyter
+```
+
+## Project Structure
+- `DataPrep_EDA.ipynb`: Data preparation and exploratory analysis
+- `Modeling.ipynb`: Model development and evaluation
+- `Final_Report.ipynb`: Comprehensive analysis and findings
+- `data/`: Directory containing cached race data
+- `conda_env.yml`: Conda environment specification
+
+## Models Used
+1. LightGBM (Best performer)
+2. XGBoost
+3. Random Forest
+4. Gradient Boosting
+
+## Key Features
+- Track temperature and air temperature interaction
+- Weather complexity score
+- Tire degradation metrics
+- Track evolution throughout races
+
+## Performance Metrics
+Average metrics across all tracks:
+```
+Model               RMSE     R²    MAE
+Gradient Boosting  4.259  0.726  2.083
+LightGBM           3.663  0.806  1.839
+Random Forest      4.915  0.644  2.396
+XGBoost            4.333  0.717  2.122
+```
+
+## Setup Instructions
+1. Clone the repository
+2. Create conda environment:
+   ```bash
+   conda env create -f conda_env.yml
+   ```
+3. Activate environment:
+   ```bash
+   conda activate csci349
+   ```
+4. Launch Jupyter:
+   ```bash
+   jupyter notebook
+   ```
+
+## Authors
 - Sean O'Connor
 - Connor Coles
 
-### Project Summary
-We are conducting a data mining project focused on analyzing driver performance in Formula One racing, with the goal to correlate driver performance with track and weather conditions, and to predict future race results using these correlations. We will apply various data mining techniques learned throughout the course to extract meaningful insights from the dataset.
+## Course Information
+- Course: CSCI 349 - Introduction to Data Mining
+- Semester: Fall 2024
+- Instructor: Brian King
 
-## Getting Started
-To run the project, you will need to set up a conda environment using the `conda_env.yml` file. To do this, run the following command in the terminal:
-```
-conda env create -f conda_env.yml
-```
-
-Then, activate the environment with:
-```
-conda activate csci349
-```
-
-Finally, open the Jupyter notebook of your choice and run the cells.
-
-### Important Dates
-- **Data Selection Due:** November 13, 2024
-- **DataPrep_EDA.ipynb Due:** November 22, 2024
-- **Modeling.ipynb Due:** December 4, 2024
-- **Final Report PDF Due:** December 10, 2024
-- **Video Presentation Due:** December 13, 2024
-
-### Package Structure
-Directories:
-- **data** - Contains the dataset used for analysis.
-- **notebooks** - Contains Jupyter notebooks for data preparation, EDA, modeling, and the final report.
-
-### 3rd Party Libraries
-- pandas
-- numpy
-- matplotlib
-- rapidfuzz
-- fastf1
-
-### Video Presentation
-<!-- Our video presentation can be found [here](insert_video_link). -->
-Our video presentation will be linked here.
-
-### Final Deliverables
-- **DataPrep_EDA.ipynb** - Notebook for data preparation and exploratory data analysis.
-- **Modeling.ipynb** - Notebook for developing and evaluating predictive models.
-- **Final_Report.pdf** - Comprehensive report summarizing our findings and methodologies, submitted to Gradescope.
-- **Video Presentation** - A recorded video summarizing our project, linked above.
-
-### Important Links
-- [Dataset Source](https://github.com/theOehrly/Fast-F1)
-- [Dataset Documentation](https://docs.fastf1.dev/index.html)
-- [GitLab Repository](https://gitlab.bucknell.edu/sso005/csci349_final_project)
+## License
+This project is part of academic coursework and is not licensed for commercial use.
