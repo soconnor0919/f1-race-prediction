@@ -5,7 +5,7 @@ This project analyzes Formula One race data to predict lap times based on weathe
 
 ## Video Presentation
 
-Our video presentation is not available yet. When it is, it will be linked here.
+Our video presentation can be found [here](https://youtu.be/6TfnljHx6Os).
 
 ## Key Findings
 - LightGBM model achieved the best overall performance (R² = 0.806, RMSE = 3.663)
