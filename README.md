@@ -15,10 +15,12 @@ Our video presentation can be found [here](https://youtu.be/6TfnljHx6Os).
 
 ## Data Source
 Data was obtained from the FastF1 API, which provides:
+
 - Detailed lap timing data
 - Weather conditions
 - Track information
 - Tire compound data
+  
 Link: [FastF1 Documentation](https://docs.fastf1.dev/)
 
 ## Required Packages
